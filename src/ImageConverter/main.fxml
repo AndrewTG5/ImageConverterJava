@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="ImageConverter.Main"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="650.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ImageConverter.mainController">
+   <ImageView fx:id="imageView" fitHeight="220.0" fitWidth="410.0" layoutX="20.0" layoutY="20.0" onDragDropped="#handleDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" style="-fx-border-style: dashed; -fx-border-color: black; -fx-border-width: 2; color: rgb(250,250,250);" />
+   <Button fx:id="convertButton" layoutX="15.0" layoutY="542.0" mnemonicParsing="false" onAction="#convertClick" prefHeight="94.0" prefWidth="422.0" text="Convert" />
+   <ChoiceBox fx:id="filetypeSelect" layoutX="20.0" layoutY="292.0" prefWidth="150.0" />
+   <Label layoutX="20.0" layoutY="266.0" text="type" />
+   <TextField fx:id="outputPath" layoutX="21.0" layoutY="508.0" prefHeight="17.0" prefWidth="254.0" />
+   <Label layoutX="18.0" layoutY="484.0" text="output" />
+   <Button layoutX="275.0" layoutY="508.0" mnemonicParsing="false" onAction="#outputPicker" text="pick" />
 </AnchorPane>
