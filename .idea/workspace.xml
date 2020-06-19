@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ImageConverterJava:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d72d4a9f-4349-4ea7-932b-d4f017eb1a1a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.5/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ImageConverterJava_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ImageConverter/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageConverterJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ImageConverterJava.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverterJava/ImageConverter/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverterJava/ImageConverter/main.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImageConverterJava/ImageConverter/mainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ImageConverter/imageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImageConverter/imageHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ImageConverter/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ImageConverter/main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ImageConverter/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ImageConverter/mainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImageConverter/mainController.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ImageConverterJava" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ImageConverterJava" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ImageConverterJava" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ImageConverterJava" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+        <option value="module-info" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1d9meK1VRVqcZB0qiE1MTdIXfos" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mods/jre" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ANDREW-SL3\github\ImageConverterJava\src\main\java" />
+      <recent name="C:\Users\ANDREW-SL3\github\ImageConverterJava\src\main\resources\ImageConverter" />
+      <recent name="C:\Users\ANDREW-SL3\github\ImageConverterJava\src\main\resources" />
+      <recent name="C:\Users\ANDREW-SL3\github\ImageConverterJava" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.ImageConverterJava [jpackage]">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="14" />
+      <option name="MAIN_CLASS_NAME" value="ImageConverter.Main" />
+      <module name="ImageConverterJava" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\ANDREW-SL3\github\javafx-sdk-14.0.1\lib;mods\production&quot; --add-modules=javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImageConverterJava [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ImageConverterJava [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ImageConverterJava [jlink]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jlink" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ImageConverterJava [jpackage]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jpackage" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ImageConverterJava [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.ImageConverterJava [jlink]" />
+        <item itemvalue="Gradle.ImageConverterJava [clean]" />
+        <item itemvalue="Gradle.ImageConverterJava [run]" />
+        <item itemvalue="Gradle.ImageConverterJava [build]" />
+        <item itemvalue="Gradle.ImageConverterJava [jpackage]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d72d4a9f-4349-4ea7-932b-d4f017eb1a1a" name="Default Changelist" comment="" />
+      <created>1591845776293</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591845776293</updated>
+    </task>
+    <task id="LOCAL-00001" summary="setup project">
+      <created>1591846833162</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591846833162</updated>
+    </task>
+    <task id="LOCAL-00002" summary="basic UI, basic ImageIO usage, drag and drop to import, and file picker to save">
+      <created>1592189543023</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592189543023</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="setup project" />
+    <MESSAGE value="basic UI, basic ImageIO usage, drag and drop to import, and file picker to save" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic UI, basic ImageIO usage, drag and drop to import, and file picker to save" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="345" y="127" key="#Plugins" timestamp="1592447975556">
+      <screen x="0" y="0" width="1504" height="972" />
+    </state>
+    <state x="345" y="127" key="#Plugins/0.0.1504.972@0.0.1504.972" timestamp="1592447975556" />
+    <state x="233" y="61" key="#Project_Structure" timestamp="1591845995894">
+      <screen x="0" y="0" width="1504" height="972" />
+    </state>
+    <state x="233" y="61" key="#Project_Structure/0.0.1504.972@0.0.1504.972" timestamp="1591845995894" />
+    <state x="208" y="141" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592454420177">
+      <screen x="0" y="0" width="1504" height="972" />
+    </state>
+    <state x="208" y="141" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1504.972@0.0.1504.972" timestamp="1592454420177" />
+    <state x="482" y="276" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1592359931033">
+      <screen x="0" y="0" width="1504" height="972" />
+    </state>
+    <state x="482" y="276" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1504.972@0.0.1504.972" timestamp="1592359931033" />
+    <state x="460" y="228" key="FileChooserDialogImpl" timestamp="1592360883303">
+      <screen x="0" y="0" width="1504" height="972" />
+    </state>
+    <state x="460" y="228" key="FileChooserDialogImpl/0.0.1504.972@0.0.1504.972" timestamp="1592360883303" />
+    <state width="1461" height="260" key="GridCell.Tab.0.bottom" timestamp="1592536651750">
+      <screen x="0" y="0" width="1504" height="972" />
+    </state>
+    <state width="1461" height="260" key="GridCell.Tab.0.bottom/0.0.1504.972@0.0.1504.972" timestamp="1592536651750" />
+    <state width="1461" height="260" key="GridCell.Tab.0.center" timestamp="1592536651750">
+      <screen x="0" y="0" width="1504" height="972" />
+    </state>
+    <state width="1461" height="260" key="GridCell.Tab.0.center/0.0.1504.972@0.0.1504.972" timestamp="1592536651750" />
+    <state width="1461" height="260" key="GridCell.Tab.0.left" timestamp="1592536651750">
+      <screen x="0" y="0" width="1504" height="972" />
+    </state>
+    <state width="1461" height="260" key="GridCell.Tab.0.left/0.0.1504.972@0.0.1504.972" timestamp="1592536651750" />
+    <state width="1461" height="260" key="GridCell.Tab.0.right" timestamp="1592536651750">
+      <screen x="0" y="0" width="1504" height="972" />
+    </state>
+    <state width="1461" height="260" key="GridCell.Tab.0.right/0.0.1504.972@0.0.1504.972" timestamp="1592536651750" />
+    <state x="233" y="61" key="SettingsEditor" timestamp="1592454091470">
+      <screen x="0" y="0" width="1504" height="972" />
+    </state>
+    <state x="233" y="61" key="SettingsEditor/0.0.1504.972@0.0.1504.972" timestamp="1592454091470" />
+    <state x="345" y="219" key="Vcs.Push.Dialog.v2" timestamp="1592189562687">
+      <screen x="0" y="0" width="1504" height="972" />
+    </state>
+    <state x="345" y="219" key="Vcs.Push.Dialog.v2/0.0.1504.972@0.0.1504.972" timestamp="1592189562687" />
+  </component>
+</project>
