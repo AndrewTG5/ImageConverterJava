@@ -6,8 +6,8 @@
 
 <AnchorPane prefHeight="650.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ImageConverter.mainController">
    <StackPane layoutX="18.0" layoutY="15.0" prefHeight="220.0" prefWidth="410.0" style="-fx-border-style: dashed; -fx-border-color: black; -fx-border-width: 2; color: rgb(250,250,250);">
-      <ImageView fx:id="imageView" fitHeight="220.0" fitWidth="410.0" onDragDropped="#handleDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" />
-      <Label text="Drop image here" />
+      <ImageView fx:id="imageView" fitHeight="220.0" fitWidth="410.0" onDragDropped="#handleDrop" onDragOver="#handleDragOver" onMouseClicked="#handleDropClick" pickOnBounds="true" preserveRatio="true" />
+      <Label text="Drop image here or click for file picker" />
    </StackPane>
    <Button fx:id="convertButton" layoutX="15.0" layoutY="542.0" mnemonicParsing="false" onAction="#convertClick" prefHeight="94.0" prefWidth="422.0" text="Convert" />
    <ChoiceBox fx:id="filetypeSelect" layoutX="20.0" layoutY="292.0" prefWidth="150.0" />

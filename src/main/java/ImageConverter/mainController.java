@@ -10,6 +10,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.DragEvent;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.input.TransferMode;
 import javafx.stage.FileChooser;
 
@@ -17,6 +18,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URL;
 import java.util.List;
 
 public class mainController {
@@ -66,5 +70,17 @@ public class mainController {
         File file = fileChooser.showSaveDialog(Main.getStage());
         pickedOutput = file.getPath();
         outputPath.setText(pickedOutput);
+    }
+
+    public void handleDropClick(MouseEvent mouseEvent) throws FileNotFoundException, MalformedURLException {
+        FileChooser fileChooser = new FileChooser();
+        FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("All Images", "*.*");
+        fileChooser.getExtensionFilters().add(extFilter);
+        File file = fileChooser.showSaveDialog(Main.getStage());
+        URI uri = file.toURI();
+        URL url = uri.toURL();
+        urls = url.toString().substring(6);
+        Image img = new Image(new FileInputStream(file));
+        imageView.setImage(img);
     }
 }
