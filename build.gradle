@@ -8,6 +8,12 @@ repositories {
     mavenCentral()
 }
 
+plugins.withType(JavaPlugin).configureEach {
+    java {
+        modularity.inferModulePath = true
+    }
+}
+
 mainClassName = "ImageConverter.Main"
 
 javafx {
@@ -16,7 +22,7 @@ javafx {
 }
 
 application {
-    mainModule = 'ImageConverterJava' // name defined in module-info.java
+    mainModule = 'ImageConverterJava'
     mainClass = 'ImageConverter.Main'
 }
 
@@ -27,7 +33,7 @@ jlink {
     }
     jpackage {
         installerType = "msi"
-        appVersion = "1.0.3"
+        appVersion = "1.0.4"
         installerOptions = ['--win-menu', '--win-shortcut']
     }
 }

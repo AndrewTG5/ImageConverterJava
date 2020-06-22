@@ -18,11 +18,11 @@ public class Main extends Application {
         primaryStage.setTitle("ImageConverter");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
+        primaryStage.setOnCloseRequest(event -> System.exit(0)); //kills process on exit, needed because of trayIcon
     }
-
 
     public static void main(String[] args) {
         launch(args);
     }
-
 }
+
