@@ -4,8 +4,9 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.control.*;
 import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
@@ -15,12 +16,12 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.input.TransferMode;
 import javafx.stage.FileChooser;
 
+import javax.imageio.ImageIO;
+import javax.swing.*;
 import java.awt.*;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URL;
 import java.util.List;
@@ -33,15 +34,23 @@ public class mainController {
     public Button convertButton;
     public ChoiceBox<String> filetypeSelect;
     public Label dropLabel;
+    //public ProgressBar progressBar;
 
     public String urls;
     public String pickedOutput;
 
+    //static float inProgress;
+
 
     public void initialize() {
-        String[] filetypes = { "PNG", "JPEG", "BMP" };
-        ObservableList<String> filetypeList = FXCollections.observableArrayList(filetypes);
+        ObservableList<String> filetypeList = FXCollections.observableArrayList(ImageIO.getWriterFormatNames());
         filetypeSelect.setItems(filetypeList);
+    }
+
+    public static void progressBar(float progress){
+        //int progressInt = Math.round(progress);
+        ProgressBar progressBar = new ProgressBar();
+        progressBar.setProgress(progress);
     }
 
     public void handleDragOver(DragEvent dragEvent) {
@@ -50,32 +59,38 @@ public class mainController {
         }
     }
 
-    public void handleDrop(DragEvent dragEvent) throws FileNotFoundException {
+    public void handleDrop(DragEvent dragEvent) throws IOException {
         List<File> files = dragEvent.getDragboard().getFiles();
         urls = dragEvent.getDragboard().getUrl().substring(6);
         Image img = new Image(new FileInputStream(files.get(0)));
         imageView.setImage(img);
         dropLabel.setVisible(false);
+        imageHandler.read(urls);
     }
 
-    public void handleDropClick(MouseEvent mouseEvent) throws FileNotFoundException, MalformedURLException {
+    public void handleDropClick(MouseEvent mouseEvent) throws IOException {
+        String[] filterList = ImageIO.getReaderFileSuffixes();
+        for(int i = 0; i < filterList.length; i++) {
+            filterList[i] = "*." + filterList[i];
+        }
+
         FileChooser fileChooser = new FileChooser();
-        FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("All Images", "*.*");
+        FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("Supported Images", filterList);
         fileChooser.getExtensionFilters().add(extFilter);
         File file = fileChooser.showOpenDialog(Main.getStage());
-        URI uri = file.toURI();
+        URI uri = file.toURI(); //  maybe don't need?
         URL url = uri.toURL();
         urls = url.toString().substring(6);
         Image img = new Image(new FileInputStream(file));
         imageView.setImage(img);
         dropLabel.setVisible(false);
+        imageHandler.read(urls);
     }
 
     public void convertClick(ActionEvent actionEvent) throws IOException, AWTException {
         String output = outputPath.getText();
-        String path = urls;
         String type = filetypeSelect.getValue();
-        imageHandler.convert(output, path, type);
+        imageHandler.convert(output, type);
     }
 
     public void outputPicker(ActionEvent actionEvent) {

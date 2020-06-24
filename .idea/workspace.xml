@@ -27,7 +27,6 @@
     <list default="true" id="d72d4a9f-4349-4ea7-932b-d4f017eb1a1a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
@@ -35,8 +34,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ImageConverter/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImageConverter/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ImageConverter/imageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImageConverter/imageHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ImageConverter/mainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImageConverter/mainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ImageConverter/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ImageConverter/main.fxml" afterDir="false" />
@@ -113,11 +112,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mods/jre" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TwelveMonkeys" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -285,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592782249193</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added system tray notification when image is converted. made drop label invisible when image is imported. closes #3">
+      <created>1592788440045</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1592788440045</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -307,7 +313,9 @@
     <MESSAGE value="can now export an msi file to install the application" />
     <MESSAGE value="improve build script and desktop and start menu shortcut is now created" />
     <MESSAGE value="added file picker for import, closes #2" />
-    <option name="LAST_COMMIT_MESSAGE" value="added file picker for import, closes #2" />
+    <MESSAGE value="added system tray notification when image is converted. made drop label invisible when image is imported." />
+    <MESSAGE value="added system tray notification when image is converted. made drop label invisible when image is imported. closes #3" />
+    <option name="LAST_COMMIT_MESSAGE" value="added system tray notification when image is converted. made drop label invisible when image is imported. closes #3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="345" y="127" key="#Plugins" timestamp="1592447975556">
@@ -318,41 +326,45 @@
       <screen x="0" y="0" width="1504" height="972" />
     </state>
     <state x="233" y="61" key="#Project_Structure/0.0.1504.972@0.0.1504.972" timestamp="1591845995894" />
-    <state x="208" y="141" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592454420177">
+    <state x="208" y="141" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592792305465">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state x="208" y="141" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1504.972@0.0.1504.972" timestamp="1592454420177" />
+    <state x="208" y="141" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1504.972@0.0.1504.972" timestamp="1592792305465" />
+    <state x="805" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1592879936450">
+      <screen x="0" y="0" width="1504" height="972" />
+    </state>
+    <state x="805" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1504.972@0.0.1504.972" timestamp="1592879936450" />
     <state x="482" y="276" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1592359931033">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
     <state x="482" y="276" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1504.972@0.0.1504.972" timestamp="1592359931033" />
-    <state x="460" y="228" key="FileChooserDialogImpl" timestamp="1592360883303">
+    <state x="460" y="228" key="FileChooserDialogImpl" timestamp="1592792380289">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state x="460" y="228" key="FileChooserDialogImpl/0.0.1504.972@0.0.1504.972" timestamp="1592360883303" />
-    <state width="1461" height="260" key="GridCell.Tab.0.bottom" timestamp="1592788174885">
+    <state x="460" y="228" key="FileChooserDialogImpl/0.0.1504.972@0.0.1504.972" timestamp="1592792380289" />
+    <state width="1461" height="260" key="GridCell.Tab.0.bottom" timestamp="1592967748816">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.bottom/0.0.1504.972@0.0.1504.972" timestamp="1592788174885" />
-    <state width="1461" height="260" key="GridCell.Tab.0.center" timestamp="1592788174885">
+    <state width="1461" height="260" key="GridCell.Tab.0.bottom/0.0.1504.972@0.0.1504.972" timestamp="1592967748816" />
+    <state width="1461" height="260" key="GridCell.Tab.0.center" timestamp="1592967748815">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.center/0.0.1504.972@0.0.1504.972" timestamp="1592788174885" />
-    <state width="1461" height="260" key="GridCell.Tab.0.left" timestamp="1592788174885">
+    <state width="1461" height="260" key="GridCell.Tab.0.center/0.0.1504.972@0.0.1504.972" timestamp="1592967748815" />
+    <state width="1461" height="260" key="GridCell.Tab.0.left" timestamp="1592967748815">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.left/0.0.1504.972@0.0.1504.972" timestamp="1592788174885" />
-    <state width="1461" height="260" key="GridCell.Tab.0.right" timestamp="1592788174885">
+    <state width="1461" height="260" key="GridCell.Tab.0.left/0.0.1504.972@0.0.1504.972" timestamp="1592967748815" />
+    <state width="1461" height="260" key="GridCell.Tab.0.right" timestamp="1592967748815">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.right/0.0.1504.972@0.0.1504.972" timestamp="1592788174885" />
-    <state x="233" y="61" key="SettingsEditor" timestamp="1592454091470">
+    <state width="1461" height="260" key="GridCell.Tab.0.right/0.0.1504.972@0.0.1504.972" timestamp="1592967748815" />
+    <state x="233" y="61" key="SettingsEditor" timestamp="1592885971946">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state x="233" y="61" key="SettingsEditor/0.0.1504.972@0.0.1504.972" timestamp="1592454091470" />
-    <state x="345" y="219" key="Vcs.Push.Dialog.v2" timestamp="1592782255436">
+    <state x="233" y="61" key="SettingsEditor/0.0.1504.972@0.0.1504.972" timestamp="1592885971946" />
+    <state x="345" y="219" key="Vcs.Push.Dialog.v2" timestamp="1592788443741">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state x="345" y="219" key="Vcs.Push.Dialog.v2/0.0.1504.972@0.0.1504.972" timestamp="1592782255436" />
+    <state x="345" y="219" key="Vcs.Push.Dialog.v2/0.0.1504.972@0.0.1504.972" timestamp="1592788443741" />
   </component>
 </project>
