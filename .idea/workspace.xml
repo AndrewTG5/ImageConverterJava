@@ -24,18 +24,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d72d4a9f-4349-4ea7-932b-d4f017eb1a1a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ImageConverter/mainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImageConverter/mainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ImageConverter/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ImageConverter/main.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="d72d4a9f-4349-4ea7-932b-d4f017eb1a1a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,7 +111,7 @@
       <recent name="C:\Users\ANDREW-SL3\github\ImageConverterJava" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ImageConverterJava [run]">
+  <component name="RunManager" selected="Gradle.ImageConverterJava [build]">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="14" />
       <option name="MAIN_CLASS_NAME" value="ImageConverter.Main" />
@@ -308,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593046167369</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="label to show the path or currently loaded file, closes #4">
+      <created>1593046758414</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1593046758414</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -335,7 +331,8 @@
     <MESSAGE value="begin implementing twelvemonkeys, adjust ui so drag image here text doesnt interfere, WIP progress bar, disabled for now, update readme" />
     <MESSAGE value="mark workspace.xml as binary" />
     <MESSAGE value="mark xml files as binary" />
-    <option name="LAST_COMMIT_MESSAGE" value="mark xml files as binary" />
+    <MESSAGE value="label to show the path or currently loaded file, closes #4" />
+    <option name="LAST_COMMIT_MESSAGE" value="label to show the path or currently loaded file, closes #4" />
   </component>
   <component name="WindowStateProjectService">
     <state x="345" y="127" key="#Plugins" timestamp="1592447975556">
@@ -362,29 +359,29 @@
       <screen x="0" y="0" width="1504" height="972" />
     </state>
     <state x="460" y="228" key="FileChooserDialogImpl/0.0.1504.972@0.0.1504.972" timestamp="1592792380289" />
-    <state width="1461" height="260" key="GridCell.Tab.0.bottom" timestamp="1593046553848">
+    <state width="1461" height="260" key="GridCell.Tab.0.bottom" timestamp="1593046577750">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.bottom/0.0.1504.972@0.0.1504.972" timestamp="1593046553848" />
-    <state width="1461" height="260" key="GridCell.Tab.0.center" timestamp="1593046553847">
+    <state width="1461" height="260" key="GridCell.Tab.0.bottom/0.0.1504.972@0.0.1504.972" timestamp="1593046577750" />
+    <state width="1461" height="260" key="GridCell.Tab.0.center" timestamp="1593046577749">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.center/0.0.1504.972@0.0.1504.972" timestamp="1593046553847" />
-    <state width="1461" height="260" key="GridCell.Tab.0.left" timestamp="1593046553846">
+    <state width="1461" height="260" key="GridCell.Tab.0.center/0.0.1504.972@0.0.1504.972" timestamp="1593046577749" />
+    <state width="1461" height="260" key="GridCell.Tab.0.left" timestamp="1593046577749">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.left/0.0.1504.972@0.0.1504.972" timestamp="1593046553846" />
-    <state width="1461" height="260" key="GridCell.Tab.0.right" timestamp="1593046553847">
+    <state width="1461" height="260" key="GridCell.Tab.0.left/0.0.1504.972@0.0.1504.972" timestamp="1593046577749" />
+    <state width="1461" height="260" key="GridCell.Tab.0.right" timestamp="1593046577749">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.right/0.0.1504.972@0.0.1504.972" timestamp="1593046553847" />
+    <state width="1461" height="260" key="GridCell.Tab.0.right/0.0.1504.972@0.0.1504.972" timestamp="1593046577749" />
     <state x="233" y="61" key="SettingsEditor" timestamp="1592885971946">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
     <state x="233" y="61" key="SettingsEditor/0.0.1504.972@0.0.1504.972" timestamp="1592885971946" />
-    <state x="345" y="219" key="Vcs.Push.Dialog.v2" timestamp="1593046197441">
+    <state x="345" y="219" key="Vcs.Push.Dialog.v2" timestamp="1593046768554">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state x="345" y="219" key="Vcs.Push.Dialog.v2/0.0.1504.972@0.0.1504.972" timestamp="1593046197441" />
+    <state x="345" y="219" key="Vcs.Push.Dialog.v2/0.0.1504.972@0.0.1504.972" timestamp="1593046768554" />
   </component>
 </project>
