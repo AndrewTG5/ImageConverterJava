@@ -24,7 +24,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d72d4a9f-4349-4ea7-932b-d4f017eb1a1a" name="Default Changelist" comment="" />
+    <list default="true" id="d72d4a9f-4349-4ea7-932b-d4f017eb1a1a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ImageConverter/imageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImageConverter/imageHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ImageConverter/mainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImageConverter/mainController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,7 +123,7 @@
       <recent name="C:\Users\ANDREW-SL3\github\ImageConverterJava" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ImageConverterJava [build]">
+  <component name="RunManager" selected="Gradle.ImageConverterJava [run]">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="14" />
       <option name="MAIN_CLASS_NAME" value="ImageConverter.Main" />
@@ -311,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593047212007</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="try and fix git attributes again">
+      <created>1593047299577</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1593047299577</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -340,7 +359,8 @@
     <MESSAGE value="mark xml files as binary" />
     <MESSAGE value="label to show the path or currently loaded file, closes #4" />
     <MESSAGE value="try and fix git attributes" />
-    <option name="LAST_COMMIT_MESSAGE" value="try and fix git attributes" />
+    <MESSAGE value="try and fix git attributes again" />
+    <option name="LAST_COMMIT_MESSAGE" value="try and fix git attributes again" />
   </component>
   <component name="WindowStateProjectService">
     <state x="345" y="127" key="#Plugins" timestamp="1592447975556">
@@ -367,29 +387,29 @@
       <screen x="0" y="0" width="1504" height="972" />
     </state>
     <state x="460" y="228" key="FileChooserDialogImpl/0.0.1504.972@0.0.1504.972" timestamp="1592792380289" />
-    <state width="1461" height="260" key="GridCell.Tab.0.bottom" timestamp="1593047166921">
+    <state width="1461" height="260" key="GridCell.Tab.0.bottom" timestamp="1593053920481">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.bottom/0.0.1504.972@0.0.1504.972" timestamp="1593047166921" />
-    <state width="1461" height="260" key="GridCell.Tab.0.center" timestamp="1593047166921">
+    <state width="1461" height="260" key="GridCell.Tab.0.bottom/0.0.1504.972@0.0.1504.972" timestamp="1593053920481" />
+    <state width="1461" height="260" key="GridCell.Tab.0.center" timestamp="1593053920480">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.center/0.0.1504.972@0.0.1504.972" timestamp="1593047166921" />
-    <state width="1461" height="260" key="GridCell.Tab.0.left" timestamp="1593047166920">
+    <state width="1461" height="260" key="GridCell.Tab.0.center/0.0.1504.972@0.0.1504.972" timestamp="1593053920480" />
+    <state width="1461" height="260" key="GridCell.Tab.0.left" timestamp="1593053920480">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.left/0.0.1504.972@0.0.1504.972" timestamp="1593047166920" />
-    <state width="1461" height="260" key="GridCell.Tab.0.right" timestamp="1593047166921">
+    <state width="1461" height="260" key="GridCell.Tab.0.left/0.0.1504.972@0.0.1504.972" timestamp="1593053920480" />
+    <state width="1461" height="260" key="GridCell.Tab.0.right" timestamp="1593053920480">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.right/0.0.1504.972@0.0.1504.972" timestamp="1593047166921" />
+    <state width="1461" height="260" key="GridCell.Tab.0.right/0.0.1504.972@0.0.1504.972" timestamp="1593053920480" />
     <state x="233" y="61" key="SettingsEditor" timestamp="1592885971946">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
     <state x="233" y="61" key="SettingsEditor/0.0.1504.972@0.0.1504.972" timestamp="1592885971946" />
-    <state x="345" y="219" key="Vcs.Push.Dialog.v2" timestamp="1593047224120">
+    <state x="345" y="219" key="Vcs.Push.Dialog.v2" timestamp="1593047301720">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state x="345" y="219" key="Vcs.Push.Dialog.v2/0.0.1504.972@0.0.1504.972" timestamp="1593047224120" />
+    <state x="345" y="219" key="Vcs.Push.Dialog.v2/0.0.1504.972@0.0.1504.972" timestamp="1593047301720" />
   </component>
 </project>

@@ -20,7 +20,6 @@ import java.awt.*;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.net.URI;
 import java.net.URL;
 import java.util.List;
 
@@ -78,8 +77,7 @@ public class mainController {
         FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("Supported Images", filterList);
         fileChooser.getExtensionFilters().add(extFilter);
         File file = fileChooser.showOpenDialog(Main.getStage());
-        URI uri = file.toURI(); //  maybe don't need?
-        URL url = uri.toURL();
+        URL url = file.toURI().toURL();
         urls = url.toString().substring(6);
         Image img = new Image(new FileInputStream(file));
         imageView.setImage(img);

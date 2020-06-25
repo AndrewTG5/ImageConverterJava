@@ -3,7 +3,6 @@ package ImageConverter;
 import javax.imageio.*;
 import javax.imageio.event.IIOReadProgressListener;
 import javax.imageio.event.IIOWriteProgressListener;
-import javax.imageio.metadata.IIOMetadata;
 import javax.imageio.stream.ImageInputStream;
 import javax.imageio.stream.ImageOutputStream;
 import java.awt.*;
@@ -33,7 +32,7 @@ public class imageHandler {
 
                 // Optionally, listen for read warnings, progress, etc.
                 //reader.addIIOReadWarningListener(...);
-                IIOReadProgressListener Rlistener = new ProgressListener();
+                //IIOReadProgressListener Rlistener = new ProgressListener();
                 //reader.addIIOReadProgressListener(Rlistener);
 
                 ImageReadParam param = reader.getDefaultReadParam();
@@ -75,7 +74,7 @@ public class imageHandler {
             try {
                 writer.setOutput(output);
 
-                IIOWriteProgressListener Wlistener = new ProgressListener();
+                //IIOWriteProgressListener Wlistener = new ProgressListener();
                 //writer.addIIOWriteProgressListener(Wlistener);
 
                 ImageWriteParam param = writer.getDefaultWriteParam();
