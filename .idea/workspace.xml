@@ -304,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593046758414</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="try and fix git attributes">
+      <created>1593047212007</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1593047212007</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -332,7 +339,8 @@
     <MESSAGE value="mark workspace.xml as binary" />
     <MESSAGE value="mark xml files as binary" />
     <MESSAGE value="label to show the path or currently loaded file, closes #4" />
-    <option name="LAST_COMMIT_MESSAGE" value="label to show the path or currently loaded file, closes #4" />
+    <MESSAGE value="try and fix git attributes" />
+    <option name="LAST_COMMIT_MESSAGE" value="try and fix git attributes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="345" y="127" key="#Plugins" timestamp="1592447975556">
@@ -359,29 +367,29 @@
       <screen x="0" y="0" width="1504" height="972" />
     </state>
     <state x="460" y="228" key="FileChooserDialogImpl/0.0.1504.972@0.0.1504.972" timestamp="1592792380289" />
-    <state width="1461" height="260" key="GridCell.Tab.0.bottom" timestamp="1593046577750">
+    <state width="1461" height="260" key="GridCell.Tab.0.bottom" timestamp="1593047166921">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.bottom/0.0.1504.972@0.0.1504.972" timestamp="1593046577750" />
-    <state width="1461" height="260" key="GridCell.Tab.0.center" timestamp="1593046577749">
+    <state width="1461" height="260" key="GridCell.Tab.0.bottom/0.0.1504.972@0.0.1504.972" timestamp="1593047166921" />
+    <state width="1461" height="260" key="GridCell.Tab.0.center" timestamp="1593047166921">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.center/0.0.1504.972@0.0.1504.972" timestamp="1593046577749" />
-    <state width="1461" height="260" key="GridCell.Tab.0.left" timestamp="1593046577749">
+    <state width="1461" height="260" key="GridCell.Tab.0.center/0.0.1504.972@0.0.1504.972" timestamp="1593047166921" />
+    <state width="1461" height="260" key="GridCell.Tab.0.left" timestamp="1593047166920">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.left/0.0.1504.972@0.0.1504.972" timestamp="1593046577749" />
-    <state width="1461" height="260" key="GridCell.Tab.0.right" timestamp="1593046577749">
+    <state width="1461" height="260" key="GridCell.Tab.0.left/0.0.1504.972@0.0.1504.972" timestamp="1593047166920" />
+    <state width="1461" height="260" key="GridCell.Tab.0.right" timestamp="1593047166921">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.right/0.0.1504.972@0.0.1504.972" timestamp="1593046577749" />
+    <state width="1461" height="260" key="GridCell.Tab.0.right/0.0.1504.972@0.0.1504.972" timestamp="1593047166921" />
     <state x="233" y="61" key="SettingsEditor" timestamp="1592885971946">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
     <state x="233" y="61" key="SettingsEditor/0.0.1504.972@0.0.1504.972" timestamp="1592885971946" />
-    <state x="345" y="219" key="Vcs.Push.Dialog.v2" timestamp="1593046768554">
+    <state x="345" y="219" key="Vcs.Push.Dialog.v2" timestamp="1593047224120">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state x="345" y="219" key="Vcs.Push.Dialog.v2/0.0.1504.972@0.0.1504.972" timestamp="1593046768554" />
+    <state x="345" y="219" key="Vcs.Push.Dialog.v2/0.0.1504.972@0.0.1504.972" timestamp="1593047224120" />
   </component>
 </project>
