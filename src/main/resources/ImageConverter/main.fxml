@@ -9,11 +9,13 @@
       <ImageView fx:id="imageView" fitHeight="220.0" fitWidth="410.0" pickOnBounds="true" preserveRatio="true" />
       <Label fx:id="dropLabel" text="Drop image here or click for file picker" />
    </StackPane>
-   <ChoiceBox fx:id="filetypeSelect" layoutX="20.0" layoutY="292.0" prefWidth="150.0" />
-   <Label layoutX="20.0" layoutY="266.0" text="type" />
-   <TextField fx:id="outputPath" layoutX="21.0" layoutY="508.0" prefHeight="17.0" prefWidth="254.0" />
-   <Label layoutX="18.0" layoutY="484.0" text="output" />
+   <ChoiceBox fx:id="filetypeSelect" layoutX="27.0" layoutY="312.0" prefWidth="150.0" />
+   <Label layoutX="25.0" layoutY="288.0" text="Output format" />
+   <TextField fx:id="outputPath" layoutX="29.0" layoutY="508.0" prefHeight="17.0" prefWidth="254.0" />
+   <Label layoutX="29.0" layoutY="490.0" text="Output path:" />
    <ProgressBar fx:id="progressBar" layoutX="18.0" layoutY="542.0" prefHeight="94.0" prefWidth="422.0" progress="0.0" />
    <Button fx:id="convertButton" layoutX="15.0" layoutY="542.0" mnemonicParsing="false" onAction="#convertClick" prefHeight="94.0" prefWidth="422.0" style="-fx-background-color: rgba(0,0,0,0);" text="Convert" />
-   <Button layoutX="275.0" layoutY="508.0" mnemonicParsing="false" onAction="#outputPicker" text="pick" />
+   <Button layoutX="283.0" layoutY="508.0" mnemonicParsing="false" onAction="#outputPicker" text="pick" />
+   <Label layoutX="25.0" layoutY="249.0" text="Currently loaded:" />
+   <Label fx:id="loadedFile" layoutX="27.0" layoutY="266.0" />
 </AnchorPane>

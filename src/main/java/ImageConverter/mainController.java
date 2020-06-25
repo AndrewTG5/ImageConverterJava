@@ -4,11 +4,10 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.control.*;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.DragEvent;
@@ -17,7 +16,6 @@ import javafx.scene.input.TransferMode;
 import javafx.stage.FileChooser;
 
 import javax.imageio.ImageIO;
-import javax.swing.*;
 import java.awt.*;
 import java.io.File;
 import java.io.FileInputStream;
@@ -34,6 +32,7 @@ public class mainController {
     public Button convertButton;
     public ChoiceBox<String> filetypeSelect;
     public Label dropLabel;
+    public Label loadedFile;
     //public ProgressBar progressBar;
 
     public String urls;
@@ -66,6 +65,7 @@ public class mainController {
         imageView.setImage(img);
         dropLabel.setVisible(false);
         imageHandler.read(urls);
+        loadedFile.setText(urls);
     }
 
     public void handleDropClick(MouseEvent mouseEvent) throws IOException {
@@ -84,6 +84,7 @@ public class mainController {
         Image img = new Image(new FileInputStream(file));
         imageView.setImage(img);
         dropLabel.setVisible(false);
+        loadedFile.setText(urls);
         imageHandler.read(urls);
     }
 
