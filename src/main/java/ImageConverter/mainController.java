@@ -21,6 +21,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
+import java.util.Arrays;
+import java.util.LinkedHashSet;
 import java.util.List;
 
 public class mainController {
@@ -32,23 +34,21 @@ public class mainController {
     public ChoiceBox<String> filetypeSelect;
     public Label dropLabel;
     public Label loadedFile;
-    //public ProgressBar progressBar;
 
     public String urls;
     public String pickedOutput;
 
-    //static float inProgress;
-
 
     public void initialize() {
-        ObservableList<String> filetypeList = FXCollections.observableArrayList(ImageIO.getWriterFormatNames());
+        String[] extList = ImageIO.getWriterFormatNames();
+        for (int i = 0; i < extList.length; i++) {
+            extList[i] = extList[i].toUpperCase();
+        }
+        LinkedHashSet<String> filteredList = new LinkedHashSet<>(Arrays.asList(extList));
+        String[] newArray = filteredList.toArray(new String[0]);
+        Arrays.sort(newArray);
+        ObservableList<String> filetypeList = FXCollections.observableArrayList(newArray);
         filetypeSelect.setItems(filetypeList);
-    }
-
-    public static void progressBar(float progress){
-        //int progressInt = Math.round(progress);
-        ProgressBar progressBar = new ProgressBar();
-        progressBar.setProgress(progress);
     }
 
     public void handleDragOver(DragEvent dragEvent) {

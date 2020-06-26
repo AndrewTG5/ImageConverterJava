@@ -1,8 +1,6 @@
 package ImageConverter;
 
 import javax.imageio.*;
-import javax.imageio.event.IIOReadProgressListener;
-import javax.imageio.event.IIOWriteProgressListener;
 import javax.imageio.stream.ImageInputStream;
 import javax.imageio.stream.ImageOutputStream;
 import java.awt.*;
@@ -29,11 +27,6 @@ public class imageHandler {
 
             try {
                 reader.setInput(input);
-
-                // Optionally, listen for read warnings, progress, etc.
-                //reader.addIIOReadWarningListener(...);
-                //IIOReadProgressListener Rlistener = new ProgressListener();
-                //reader.addIIOReadProgressListener(Rlistener);
 
                 ImageReadParam param = reader.getDefaultReadParam();
 
@@ -74,9 +67,6 @@ public class imageHandler {
             try {
                 writer.setOutput(output);
 
-                //IIOWriteProgressListener Wlistener = new ProgressListener();
-                //writer.addIIOWriteProgressListener(Wlistener);
-
                 ImageWriteParam param = writer.getDefaultWriteParam();
 
                 // Optionally, control format specific settings of param (requires casting), or
@@ -95,58 +85,4 @@ public class imageHandler {
         }
         finally { writer.dispose(); }
     }
-}
-
-class ProgressListener implements IIOReadProgressListener, IIOWriteProgressListener {
-
-    public ProgressListener() {}
-
-
-    @Override
-    public void sequenceStarted(ImageReader source, int minIndex) { }
-
-    @Override
-    public void sequenceComplete(ImageReader source) { }
-
-    @Override
-    public void imageStarted(ImageReader source, int imageIndex) { mainController.progressBar(0.1f); }
-
-    @Override
-    public void imageProgress(ImageReader source, float percentageDone) { mainController.progressBar(percentageDone); }
-
-    @Override
-    public void imageComplete(ImageReader source) { mainController.progressBar(0.1f); }
-
-    @Override
-    public void thumbnailStarted(ImageReader source, int imageIndex, int thumbnailIndex) { }
-
-    @Override
-    public void thumbnailProgress(ImageReader source, float percentageDone) { }
-
-    @Override
-    public void thumbnailComplete(ImageReader source) { }
-
-    @Override
-    public void readAborted(ImageReader source) { }
-
-    @Override
-    public void imageStarted(ImageWriter source, int imageIndex) { }
-
-    @Override
-    public void imageProgress(ImageWriter source, float percentageDone) { }
-
-    @Override
-    public void imageComplete(ImageWriter source) { }
-
-    @Override
-    public void thumbnailStarted(ImageWriter source, int imageIndex, int thumbnailIndex) { }
-
-    @Override
-    public void thumbnailProgress(ImageWriter source, float percentageDone) { }
-
-    @Override
-    public void thumbnailComplete(ImageWriter source) { }
-
-    @Override
-    public void writeAborted(ImageWriter source) { }
 }
