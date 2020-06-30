@@ -1,7 +1,7 @@
 # ImageConverterJava
 ImageConverter for java 14
 
-Uses JavaFX, [TwelveMonkeys](https://github.com/haraldk/TwelveMonkeys), and [webp-imageio](https://bitbucket.org/luciad/webp-imageio/src/default/)
+Uses JavaFX and [TwelveMonkeys](https://github.com/haraldk/TwelveMonkeys)
 Supports a bunch of formats and heaps of control.
 
 image coming soon
