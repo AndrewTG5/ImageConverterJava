@@ -31,7 +31,7 @@ public class mainController {
     public ImageView imageView;
     public TextField outputPath;
     public Button convertButton;
-    public ChoiceBox<String> filetypeSelect;
+    public ComboBox<String> filetypeSelect;
     public Label dropLabel;
     public Label loadedFile;
 
