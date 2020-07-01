@@ -14,6 +14,10 @@ plugins.withType(JavaPlugin).configureEach {
     }
 }
 
+dependencies {
+    implementation 'commons-io:commons-io:2.6'
+}
+
 mainClassName = "ImageConverter.Main"
 
 javafx {
@@ -33,7 +37,7 @@ jlink {
     }
     jpackage {
         installerType = "msi"
-        appVersion = "1.2.0"
+        appVersion = "1.2.1"
         imageOptions = ['--icon', 'src/main/resources/ImageConverter/favicon.ico']
         installerOptions = ['--win-dir-chooser', '--win-menu', '--win-shortcut']
     }

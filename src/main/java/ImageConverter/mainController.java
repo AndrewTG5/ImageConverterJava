@@ -24,6 +24,7 @@ import java.net.URL;
 import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.List;
+import org.apache.commons.io.FilenameUtils;
 
 public class mainController {
 
@@ -96,7 +97,8 @@ public class mainController {
 
     public void outputPicker(ActionEvent actionEvent) {
         FileChooser fileChooser = new FileChooser();
-        String filter = "*."+filetypeSelect.getValue();
+        fileChooser.setInitialDirectory(new File(FilenameUtils.getFullPath(urls)));
+        String filter = "*."+FilenameUtils.getExtension(urls);
         FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("Image file", filter);
         fileChooser.getExtensionFilters().add(extFilter);
         File file = fileChooser.showSaveDialog(Main.getStage());
