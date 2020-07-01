@@ -65,6 +65,7 @@ public class mainController {
         dropLabel.setVisible(false);
         imageHandler.read(urls);
         loadedFile.setText(urls);
+        outputPath.clear();
     }
 
     public void handleDropClick(MouseEvent mouseEvent) throws IOException {
@@ -82,8 +83,9 @@ public class mainController {
         Image img = new Image(new FileInputStream(file));
         imageView.setImage(img);
         dropLabel.setVisible(false);
-        loadedFile.setText(urls);
         imageHandler.read(urls);
+        loadedFile.setText(urls);
+        outputPath.clear();
     }
 
     public void convertClick(ActionEvent actionEvent) throws IOException, AWTException {
@@ -104,7 +106,7 @@ public class mainController {
 
     public static void trayMessage(String message) throws AWTException {
         SystemTray tray = SystemTray.getSystemTray();
-        java.awt.Image image = Toolkit.getDefaultToolkit().createImage("icon.png");
+        java.awt.Image image = Toolkit.getDefaultToolkit().createImage(mainController.class.getResource("icon.png"));
         TrayIcon trayIcon = new TrayIcon(image, "ImageConverter");
         trayIcon.setImageAutoSize(true);
         trayIcon.setToolTip("ImageConverter");
