@@ -62,6 +62,7 @@ public class mainController {
         Arrays.sort(newArray);
         ObservableList<String> filetypeList = FXCollections.observableArrayList(newArray);
         filetypeSelect.setItems(filetypeList);
+        pasteButton.setDisable(!Toolkit.getDefaultToolkit().getSystemClipboard().isDataFlavorAvailable(imageFlavor));
         Toolkit.getDefaultToolkit().getSystemClipboard().addFlavorListener(new FlavorListener() {
             //adds clipboard listener
             @Override
@@ -83,12 +84,12 @@ public class mainController {
         File file = File.createTempFile("pastedImg", "png");
         ImageIO.write(pImg, "png", file);
         Image img = new Image(new FileInputStream(file.getAbsolutePath()));
+        urls = file.getAbsolutePath();
         imageView.setImage(img);
         dropLabel.setVisible(false);
         readParam();
         loadedFile.setText(urls);
         outputPath.clear();
-        pasteButton.setDisable(true);
     }
 
     public void handleDragOver(DragEvent dragEvent) {
@@ -106,7 +107,6 @@ public class mainController {
         readParam();
         loadedFile.setText(urls);
         outputPath.clear();
-        pasteButton.setDisable(true);
     }
 
     public void handleDropClick(MouseEvent mouseEvent) throws IOException {
@@ -127,7 +127,6 @@ public class mainController {
         readParam();
         loadedFile.setText(urls);
         outputPath.clear();
-        pasteButton.setDisable(true);
     }
 
     public void convertClick(ActionEvent actionEvent) throws IOException, AWTException {

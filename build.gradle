@@ -37,7 +37,7 @@ jlink {
     }
     jpackage {
         installerType = "msi"
-        appVersion = "1.2.2"
+        appVersion = "1.2.3"
         imageOptions = ['--icon', 'src/main/resources/ImageConverter/favicon.ico']
         installerOptions = ['--win-dir-chooser', '--win-menu', '--win-shortcut']
     }
