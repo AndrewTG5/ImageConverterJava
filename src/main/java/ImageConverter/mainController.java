@@ -17,14 +17,24 @@ import javafx.stage.FileChooser;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
+import java.awt.datatransfer.DataFlavor;
+import java.awt.datatransfer.FlavorEvent;
+import java.awt.datatransfer.FlavorListener;
+import java.awt.datatransfer.UnsupportedFlavorException;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URL;
 import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.List;
+
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
+
+import static java.awt.datatransfer.DataFlavor.imageFlavor;
 
 public class mainController {
 
@@ -35,10 +45,12 @@ public class mainController {
     public ComboBox<String> filetypeSelect;
     public Label dropLabel;
     public Label loadedFile;
+    public TextField width;
+    public TextField height;
 
     public String urls;
     public String pickedOutput;
-
+    public Button pasteButton;
 
     public void initialize() {
         String[] extList = ImageIO.getWriterFormatNames();
@@ -50,6 +62,33 @@ public class mainController {
         Arrays.sort(newArray);
         ObservableList<String> filetypeList = FXCollections.observableArrayList(newArray);
         filetypeSelect.setItems(filetypeList);
+        Toolkit.getDefaultToolkit().getSystemClipboard().addFlavorListener(new FlavorListener() {
+            //adds clipboard listener
+            @Override
+            public void flavorsChanged(FlavorEvent e) {
+                //simplified if else statement to disable or enable pasteButton depending if the data in the clipboard is an image
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException interruptedException) {
+                    interruptedException.printStackTrace();
+                }
+                //sleep otherwise java.lang.IllegalStateException: cannot open system clipboard
+                pasteButton.setDisable(!Toolkit.getDefaultToolkit().getSystemClipboard().isDataFlavorAvailable(imageFlavor));
+            }
+        });
+    }
+
+    public void handlePaste(ActionEvent actionEvent) throws IOException, UnsupportedFlavorException {
+        BufferedImage pImg = (BufferedImage) Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null).getTransferData(DataFlavor.imageFlavor);
+        File file = File.createTempFile("pastedImg", "png");
+        ImageIO.write(pImg, "png", file);
+        Image img = new Image(new FileInputStream(file.getAbsolutePath()));
+        imageView.setImage(img);
+        dropLabel.setVisible(false);
+        readParam();
+        loadedFile.setText(urls);
+        outputPath.clear();
+        pasteButton.setDisable(true);
     }
 
     public void handleDragOver(DragEvent dragEvent) {
@@ -64,9 +103,10 @@ public class mainController {
         Image img = new Image(new FileInputStream(files.get(0)));
         imageView.setImage(img);
         dropLabel.setVisible(false);
-        imageHandler.read(urls);
+        readParam();
         loadedFile.setText(urls);
         outputPath.clear();
+        pasteButton.setDisable(true);
     }
 
     public void handleDropClick(MouseEvent mouseEvent) throws IOException {
@@ -84,9 +124,10 @@ public class mainController {
         Image img = new Image(new FileInputStream(file));
         imageView.setImage(img);
         dropLabel.setVisible(false);
-        imageHandler.read(urls);
+        readParam();
         loadedFile.setText(urls);
         outputPath.clear();
+        pasteButton.setDisable(true);
     }
 
     public void convertClick(ActionEvent actionEvent) throws IOException, AWTException {
@@ -114,5 +155,11 @@ public class mainController {
         trayIcon.setToolTip("ImageConverter");
         tray.add(trayIcon);
         trayIcon.displayMessage(message, "ImageConverter", TrayIcon.MessageType.INFO);
+    }
+
+    public void readParam() throws IOException {
+        imageHandler.read(urls);
+        height.setText(imageHandler.readHeight(urls));
+        width.setText(imageHandler.readWidth(urls));
     }
 }

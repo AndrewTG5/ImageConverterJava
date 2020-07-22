@@ -14,9 +14,8 @@ public class imageHandler {
 
     public static void read(String path) throws IOException {
         File file = new File(path);
-        ImageInputStream input = ImageIO.createImageInputStream(file);
 
-        try {
+        try (ImageInputStream input = ImageIO.createImageInputStream(file)) {
             Iterator<ImageReader> readers = ImageIO.getImageReaders(input);
 
             if (!readers.hasNext()) {
@@ -42,10 +41,10 @@ public class imageHandler {
                 // Optionally, read thumbnails, meta data, etc...
                 //int numThumbs = reader.getNumThumbnails(0);
                 // ...
+            } finally {
+                reader.dispose();
             }
-            finally { reader.dispose(); }
         }
-        finally { input.close(); }
     }
 
 
@@ -61,10 +60,7 @@ public class imageHandler {
         ImageWriter writer = writers.next();
 
         try {
-            // Create output stream
-            ImageOutputStream output = ImageIO.createImageOutputStream(new File(outputPath));
-
-            try {
+            try (ImageOutputStream output = ImageIO.createImageOutputStream(new File(outputPath))) {
                 writer.setOutput(output);
 
                 ImageWriteParam param = writer.getDefaultWriteParam();
@@ -81,8 +77,27 @@ public class imageHandler {
                 writer.write(null, new IIOImage(image, null, null), param);
                 mainController.trayMessage("Image converted Successfully");
             }
-            finally { output.close(); }
         }
         finally { writer.dispose(); }
+    }
+
+    public static String readHeight(String path) throws IOException {
+        File file = new File(path);
+        try(ImageInputStream in = ImageIO.createImageInputStream(file)){
+            final Iterator<ImageReader> readers = ImageIO.getImageReaders(in);
+            ImageReader reader = readers.next();
+            reader.setInput(in);
+            return String.valueOf(reader.getHeight(0));
+        }
+    }
+
+    public static String readWidth(String path) throws IOException {
+        File file = new File(path);
+        try(ImageInputStream in = ImageIO.createImageInputStream(file)){
+            final Iterator<ImageReader> readers = ImageIO.getImageReaders(in);
+            ImageReader reader = readers.next();
+            reader.setInput(in);
+            return String.valueOf(reader.getWidth(0));
+        }
     }
 }

@@ -6,23 +6,26 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="650.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ImageConverter.mainController">
-   <StackPane fx:id="importBox" layoutX="18.0" layoutY="14.0" onDragDropped="#handleDrop" onDragOver="#handleDragOver" onMouseClicked="#handleDropClick" prefHeight="212.0" prefWidth="414.0" style="-fx-border-style: dashed; -fx-border-color: black; -fx-border-width: 2; color: rgb(250,250,250);">
-      <ImageView fx:id="imageView" fitHeight="202.0" fitWidth="410.0" pickOnBounds="true" preserveRatio="true" />
+<AnchorPane prefHeight="650.0" prefWidth="450" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ImageConverter.mainController">
+   <StackPane layoutX="18.0" layoutY="14.0" onDragDropped="#handleDrop" onDragOver="#handleDragOver" onMouseClicked="#handleDropClick" prefHeight="212.0" prefWidth="414.0" style="-fx-border-style: dashed; -fx-border-color: black; -fx-border-width: 2; color: rgb(250,250,250);">
+      <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="410.0" preserveRatio="true" />
       <Label fx:id="dropLabel" text="Drop image here or click for file picker" />
    </StackPane>
-   <ComboBox fx:id="filetypeSelect" layoutX="15.0" layoutY="312.0" prefWidth="150.0" promptText="Convert to" />
-   <TextField fx:id="outputPath" layoutX="71.0" layoutY="508.0" prefHeight="17.0" prefWidth="254.0" />
-   <Button fx:id="convertButton" layoutX="15.0" layoutY="542.0" mnemonicParsing="false" onAction="#convertClick" prefHeight="94.0" prefWidth="422.0" text="Convert" />
-   <Button layoutX="15.0" layoutY="508.0" mnemonicParsing="false" onAction="#outputPicker" text="Save to" />
-   <Line endX="289.0" endY="-7.0" layoutX="164.0" layoutY="249.0" startX="-164.0" startY="-7.0" />
-   <Line endX="268.0" layoutX="185.0" layoutY="351.0" startX="-185.0" />
-   <Line endX="281.0" layoutX="172.0" layoutY="479.0" startX="-172.0" />
-   <Label layoutX="19.0" layoutY="362.0" text="Parameters" />
-   <StackPane layoutX="15.0" layoutY="380.0" prefHeight="85.0" prefWidth="422.0" />
-   <Label fx:id="loadedFile" layoutX="20.0" layoutY="208.0" prefHeight="17.0" prefWidth="410.0" style="-fx-background-color: rgba(255,255,255,0.5);">
+   <Label fx:id="loadedFile" layoutX="20.0" layoutY="208.0" prefHeight="16.0" prefWidth="408.0" style="-fx-background-color: rgba(255,255,255,0.5);">
       <font>
          <Font size="10.0" />
       </font>
    </Label>
+   <Line endX="450" layoutY="240.0" />
+   <ComboBox fx:id="filetypeSelect" layoutX="18.0" layoutY="252.0" prefWidth="150.0" promptText="Convert to" />
+   <Pane>
+      <Label layoutX="18.0" layoutY="286.0" text="Resolution:" />
+      <TextField fx:id="width" layoutX="18.0" layoutY="312.0" prefHeight="25.0" prefWidth="60.0" />
+      <TextField fx:id="height" layoutX="94.0" layoutY="312.0" prefHeight="25.0" prefWidth="60.0" />
+   </Pane>
+   <Button layoutX="18.0" layoutY="494.0" mnemonicParsing="false" onAction="#outputPicker" text="Save to" />
+   <TextField fx:id="outputPath" layoutX="73.0" layoutY="494.0" prefHeight="25.0" prefWidth="359.0" />
+   <Line endX="450" layoutY="532" />
+   <Button fx:id="convertButton" layoutX="18.0" layoutY="546.0" mnemonicParsing="false" onAction="#convertClick" prefHeight="90.0" prefWidth="414.0" text="Convert" />
+   <Button fx:id="pasteButton" disable="true" layoutX="161.0" layoutY="137.0" mnemonicParsing="false" onAction="#handlePaste" text="Paste from clipboard" />
 </AnchorPane>
