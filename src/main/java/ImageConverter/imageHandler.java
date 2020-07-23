@@ -17,24 +17,14 @@ public class imageHandler {
 
         try (ImageInputStream input = ImageIO.createImageInputStream(file)) {
             Iterator<ImageReader> readers = ImageIO.getImageReaders(input);
-
             if (!readers.hasNext()) {
                 throw new IllegalArgumentException("No reader for: " + file);
             }
 
             ImageReader reader = readers.next();
-
             try {
                 reader.setInput(input);
-
                 ImageReadParam param = reader.getDefaultReadParam();
-
-                // Optionally, control read settings like sub sampling, source region or destination etc.
-                //param.setSourceSubsampling(...);
-                //param.setSourceRegion(...);
-                //param.setDestination(...);
-
-                // Finally read the image, using settings from param
                 image = reader.read(0, param);
                 //System.out.println(image); has lots of useful image information
 
@@ -49,31 +39,26 @@ public class imageHandler {
 
 
     public static void convert(String outputPath, String type) throws IOException, AWTException {
-
         // Get the writer
         Iterator<ImageWriter> writers = ImageIO.getImageWritersByFormatName(type);
-
         if (!writers.hasNext()) {
             throw new IllegalArgumentException("No writer for: " + type);
         }
 
         ImageWriter writer = writers.next();
-
         try {
             try (ImageOutputStream output = ImageIO.createImageOutputStream(new File(outputPath))) {
                 writer.setOutput(output);
-
                 ImageWriteParam param = writer.getDefaultWriteParam();
 
                 // Optionally, control format specific settings of param (requires casting), or
                 // control generic write settings like sub sampling, source region, output type etc.
 
 
+                //  streamMetadata - an IIOMetadata object representing stream metadata, or null to use default values.
+                //  image - an IIOImage object containing an image, thumbnails, and metadata to be written.
+                // param - an ImageWriteParam, or null to use a default ImageWriteParam.
 
-                /*  streamMetadata - an IIOMetadata object representing stream metadata, or null to use default values.
-                    image - an IIOImage object containing an image, thumbnails, and metadata to be written.
-                    param - an ImageWriteParam, or null to use a default ImageWriteParam.
-                 */
                 writer.write(null, new IIOImage(image, null, null), param);
                 mainController.trayMessage("Image converted Successfully");
             }
@@ -81,6 +66,11 @@ public class imageHandler {
         finally { writer.dispose(); }
     }
 
+    /**
+     * Gets the height of an image for use in the UI
+     * @param path The image to read
+     * @return The height of the image, in pixels. Needs to be a String for JavaFX
+     */
     public static String readHeight(String path) throws IOException {
         File file = new File(path);
         try(ImageInputStream in = ImageIO.createImageInputStream(file)){
@@ -91,6 +81,11 @@ public class imageHandler {
         }
     }
 
+    /**
+     * Gets the width of an image for use in the UI
+     * @param path The image to read
+     * @return The width of the image, in pixels. Needs to be a String for JavaFX
+     */
     public static String readWidth(String path) throws IOException {
         File file = new File(path);
         try(ImageInputStream in = ImageIO.createImageInputStream(file)){

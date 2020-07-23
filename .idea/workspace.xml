@@ -35,6 +35,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ImageConverter/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImageConverter/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ImageConverter/imageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImageConverter/imageHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ImageConverter/mainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImageConverter/mainController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +111,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jna" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3321839" />
@@ -123,7 +125,7 @@
       <recent name="C:\Users\ANDREW-SL3\github\ImageConverterJava" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ImageConverterJava [run]">
+  <component name="RunManager" selected="Gradle.ImageConverterJava [build]">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="14" />
       <option name="MAIN_CLASS_NAME" value="ImageConverter.Main" />
@@ -379,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595376995347</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="fixes #10">
+      <created>1595380100029</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1595380100029</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -444,33 +453,33 @@
       <screen x="0" y="0" width="1504" height="972" />
     </state>
     <state x="176" y="127" width="1021" height="745" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1504.972@0.0.1504.972" timestamp="1595298260326" />
-    <state x="460" y="228" key="FileChooserDialogImpl" timestamp="1593130325303">
+    <state x="460" y="228" key="FileChooserDialogImpl" timestamp="1595389468620">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state x="460" y="228" key="FileChooserDialogImpl/0.0.1504.972@0.0.1504.972" timestamp="1593130325303" />
-    <state width="1461" height="260" key="GridCell.Tab.0.bottom" timestamp="1595380077397">
+    <state x="460" y="228" key="FileChooserDialogImpl/0.0.1504.972@0.0.1504.972" timestamp="1595389468620" />
+    <state width="1461" height="260" key="GridCell.Tab.0.bottom" timestamp="1595471306292">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.bottom/0.0.1504.972@0.0.1504.972" timestamp="1595380077397" />
-    <state width="1461" height="260" key="GridCell.Tab.0.center" timestamp="1595380077397">
+    <state width="1461" height="260" key="GridCell.Tab.0.bottom/0.0.1504.972@0.0.1504.972" timestamp="1595471306292" />
+    <state width="1461" height="260" key="GridCell.Tab.0.center" timestamp="1595471306292">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.center/0.0.1504.972@0.0.1504.972" timestamp="1595380077397" />
-    <state width="1461" height="260" key="GridCell.Tab.0.left" timestamp="1595380077396">
+    <state width="1461" height="260" key="GridCell.Tab.0.center/0.0.1504.972@0.0.1504.972" timestamp="1595471306292" />
+    <state width="1461" height="260" key="GridCell.Tab.0.left" timestamp="1595471306292">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.left/0.0.1504.972@0.0.1504.972" timestamp="1595380077396" />
-    <state width="1461" height="260" key="GridCell.Tab.0.right" timestamp="1595380077397">
+    <state width="1461" height="260" key="GridCell.Tab.0.left/0.0.1504.972@0.0.1504.972" timestamp="1595471306292" />
+    <state width="1461" height="260" key="GridCell.Tab.0.right" timestamp="1595471306292">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.right/0.0.1504.972@0.0.1504.972" timestamp="1595380077397" />
-    <state x="263" y="121" key="SettingsEditor" timestamp="1593133761445">
+    <state width="1461" height="260" key="GridCell.Tab.0.right/0.0.1504.972@0.0.1504.972" timestamp="1595471306292" />
+    <state x="263" y="121" key="SettingsEditor" timestamp="1595458430799">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state x="263" y="121" key="SettingsEditor/0.0.1504.972@0.0.1504.972" timestamp="1593133761445" />
-    <state x="345" y="219" key="Vcs.Push.Dialog.v2" timestamp="1595377000041">
+    <state x="263" y="121" key="SettingsEditor/0.0.1504.972@0.0.1504.972" timestamp="1595458430799" />
+    <state x="345" y="219" key="Vcs.Push.Dialog.v2" timestamp="1595380102153">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state x="345" y="219" key="Vcs.Push.Dialog.v2/0.0.1504.972@0.0.1504.972" timestamp="1595377000041" />
+    <state x="345" y="219" key="Vcs.Push.Dialog.v2/0.0.1504.972@0.0.1504.972" timestamp="1595380102153" />
   </component>
 </project>

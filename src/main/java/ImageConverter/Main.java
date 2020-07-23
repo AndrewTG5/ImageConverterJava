@@ -21,7 +21,8 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(root));
         primaryStage.setResizable(false);
         primaryStage.show();
-        primaryStage.setOnCloseRequest(event -> System.exit(0)); //kills process on exit, needed because of trayIcon
+        // Kills process on exit, needed because trayIcon persists
+        primaryStage.setOnCloseRequest(event -> System.exit(0));
     }
 
     public static void main(String[] args) {
