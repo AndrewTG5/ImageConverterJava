@@ -171,6 +171,8 @@ public class mainController {
     public void readParam() throws IOException {
         height.setText(imageHandler.readHeight(urls));
         width.setText(imageHandler.readWidth(urls));
+        pasteButton.setLayoutX(306);
+        pasteButton.setLayoutY(252);
         float initialRatio = Float.parseFloat(height.getText()) / Float.parseFloat(width.getText());
         outputPath.clear();
         dropLabel.setVisible(false);
