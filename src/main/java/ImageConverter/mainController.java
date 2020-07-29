@@ -3,8 +3,8 @@ package ImageConverter;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.scene.control.*;
 import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
@@ -12,6 +12,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.DragEvent;
 import javafx.scene.input.TransferMode;
 import javafx.stage.FileChooser;
+import javafx.util.converter.IntegerStringConverter;
 import org.apache.commons.io.FilenameUtils;
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -50,6 +51,8 @@ public class mainController {
         for (int i = 0; i < extList.length; i++) {
             extList[i] = extList[i].toUpperCase();
         }
+        width.setTextFormatter(new TextFormatter<>(new IntegerStringConverter()));
+        height.setTextFormatter(new TextFormatter<>(new IntegerStringConverter()));
         LinkedHashSet<String> filteredList = new LinkedHashSet<>(Arrays.asList(extList));
         String[] newArray = filteredList.toArray(new String[0]);
         Arrays.sort(newArray);
@@ -184,26 +187,20 @@ public class mainController {
         imageHandler.read(urls);
         height.setPromptText(height.getText());
         width.setPromptText(width.getText());
-        height.textProperty().addListener((observable, oldValue, newValue) -> {
+        height.textProperty().addListener((observable) -> {
             ratioLabel.setText(Float.toString(Float.parseFloat(height.getText()) / Float.parseFloat(width.getText())));
             if (Float.parseFloat(ratioLabel.getText()) == initialRatio) {
                 ratioLabel.setStyle("-fx-text-fill: #00ff00;");
             } else {
                 ratioLabel.setStyle("-fx-text-fill: #ff0000;");
-            }
-            if (!newValue.matches("\\d*")) {
-                height.setText(newValue.replaceAll("[^\\d]", "")); // broken
             }
         });
-        width.textProperty().addListener((observable, oldValue, newValue) -> {
+        width.textProperty().addListener((observable) -> {
             ratioLabel.setText(Float.toString(Float.parseFloat(height.getText()) / Float.parseFloat(width.getText())));
             if (Float.parseFloat(ratioLabel.getText()) == initialRatio) {
                 ratioLabel.setStyle("-fx-text-fill: #00ff00;");
             } else {
                 ratioLabel.setStyle("-fx-text-fill: #ff0000;");
-            }
-            if (!newValue.matches("\\d*")) {
-                width.setText(newValue.replaceAll("[^\\d]", "")); // broken
             }
         });
     }
