@@ -1,7 +1,7 @@
 plugins {
     id 'application'
     id 'org.openjfx.javafxplugin' version '0.0.9'
-    id 'org.beryx.jlink' version '2.21.0'
+    id 'org.beryx.jlink' version '2.21.1'
 }
 
 repositories {
@@ -37,7 +37,7 @@ jlink {
     }
     jpackage {
         installerType = "msi"
-        appVersion = "1.3.0"
+        appVersion = "1.3.1"
         imageOptions = ['--icon', 'src/main/resources/ImageConverter/favicon.ico']
         installerOptions = ['--win-dir-chooser', '--win-menu', '--win-shortcut']
     }
