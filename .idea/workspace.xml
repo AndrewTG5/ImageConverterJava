@@ -31,7 +31,9 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ImageConverter/mainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImageConverter/mainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ImageConverter/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ImageConverter/main.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -412,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595985589122</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="close #11">
+      <created>1595986351867</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1595986351867</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -453,7 +462,8 @@
     <MESSAGE value="code cleanup and add javadoc" />
     <MESSAGE value="update dependencies" />
     <MESSAGE value="add image resizing, aspect ratio label, and broken filtering for width and height inputs" />
-    <option name="LAST_COMMIT_MESSAGE" value="add image resizing, aspect ratio label, and broken filtering for width and height inputs" />
+    <MESSAGE value="close #11" />
+    <option name="LAST_COMMIT_MESSAGE" value="close #11" />
   </component>
   <component name="WindowStateProjectService">
     <state x="345" y="127" key="#Plugins" timestamp="1595975668225">
@@ -484,29 +494,29 @@
       <screen x="0" y="0" width="1504" height="972" />
     </state>
     <state x="460" y="228" key="FileChooserDialogImpl/0.0.1504.972@0.0.1504.972" timestamp="1595389468620" />
-    <state width="1461" height="260" key="GridCell.Tab.0.bottom" timestamp="1595986275915">
+    <state width="1461" height="260" key="GridCell.Tab.0.bottom" timestamp="1595989293968">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.bottom/0.0.1504.972@0.0.1504.972" timestamp="1595986275915" />
-    <state width="1461" height="260" key="GridCell.Tab.0.center" timestamp="1595986275914">
+    <state width="1461" height="260" key="GridCell.Tab.0.bottom/0.0.1504.972@0.0.1504.972" timestamp="1595989293968" />
+    <state width="1461" height="260" key="GridCell.Tab.0.center" timestamp="1595989293968">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.center/0.0.1504.972@0.0.1504.972" timestamp="1595986275914" />
-    <state width="1461" height="260" key="GridCell.Tab.0.left" timestamp="1595986275914">
+    <state width="1461" height="260" key="GridCell.Tab.0.center/0.0.1504.972@0.0.1504.972" timestamp="1595989293968" />
+    <state width="1461" height="260" key="GridCell.Tab.0.left" timestamp="1595989293968">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.left/0.0.1504.972@0.0.1504.972" timestamp="1595986275914" />
-    <state width="1461" height="260" key="GridCell.Tab.0.right" timestamp="1595986275914">
+    <state width="1461" height="260" key="GridCell.Tab.0.left/0.0.1504.972@0.0.1504.972" timestamp="1595989293968" />
+    <state width="1461" height="260" key="GridCell.Tab.0.right" timestamp="1595989293968">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.right/0.0.1504.972@0.0.1504.972" timestamp="1595986275914" />
+    <state width="1461" height="260" key="GridCell.Tab.0.right/0.0.1504.972@0.0.1504.972" timestamp="1595989293968" />
     <state x="263" y="121" key="SettingsEditor" timestamp="1595983150184">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
     <state x="263" y="121" key="SettingsEditor/0.0.1504.972@0.0.1504.972" timestamp="1595983150184" />
-    <state x="345" y="219" key="Vcs.Push.Dialog.v2" timestamp="1595985622837">
+    <state x="345" y="219" key="Vcs.Push.Dialog.v2" timestamp="1595986354311">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state x="345" y="219" key="Vcs.Push.Dialog.v2/0.0.1504.972@0.0.1504.972" timestamp="1595985622837" />
+    <state x="345" y="219" key="Vcs.Push.Dialog.v2/0.0.1504.972@0.0.1504.972" timestamp="1595986354311" />
   </component>
 </project>

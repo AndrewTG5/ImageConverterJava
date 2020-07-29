@@ -18,15 +18,13 @@
    </Label>
    <Line endX="450" layoutY="240.0" />
    <ComboBox fx:id="filetypeSelect" layoutX="18.0" layoutY="252.0" prefWidth="150.0" promptText="Convert to" />
-   <Pane>
-      <Label layoutX="18.0" layoutY="286.0" text="Resolution:" />
-      <TextField fx:id="width" layoutX="18.0" layoutY="312.0" prefHeight="25.0" prefWidth="60.0" />
-      <TextField fx:id="height" layoutX="94.0" layoutY="312.0" prefHeight="25.0" prefWidth="60.0" />
-   </Pane>
+   <Label layoutX="20.0" layoutY="289.0" text="Resolution:" />
+   <TextField fx:id="width" layoutX="18.0" layoutY="312.0" prefHeight="25.0" prefWidth="60.0" />
+   <TextField fx:id="height" layoutX="95.0" layoutY="312.0" prefHeight="25.0" prefWidth="60.0" />
+   <Label fx:id="ratioLabel" layoutX="162.0" layoutY="315.0" />
    <Button layoutX="18.0" layoutY="494.0" mnemonicParsing="false" onAction="#outputPicker" text="Save to" />
    <TextField fx:id="outputPath" layoutX="73.0" layoutY="494.0" prefHeight="25.0" prefWidth="359.0" />
    <Line endX="450" layoutY="532" />
-   <Button fx:id="convertButton" layoutX="18.0" layoutY="546.0" mnemonicParsing="false" onAction="#convertClick" prefHeight="90.0" prefWidth="414.0" text="Convert" />
+   <Button fx:id="convertButton" disable="true" layoutX="18.0" layoutY="546.0" mnemonicParsing="false" onAction="#convertClick" prefHeight="90.0" prefWidth="414.0" text="Convert" />
    <Button fx:id="pasteButton" disable="true" layoutX="161.0" layoutY="137.0" mnemonicParsing="false" onAction="#handlePaste" text="Paste from clipboard" />
-   <Label fx:id="ratioLabel" layoutX="161.0" layoutY="317.0" />
 </AnchorPane>

@@ -134,7 +134,11 @@ public class mainController {
      * Called when the convert button is clicked. Collects output parameters from UI and sends them to imageHandler.
      */
     public void convertClick() throws IOException, AWTException {
-        imageHandler.convert(outputPath.getText(), filetypeSelect.getValue(), Integer.parseInt(height.getText()), Integer.parseInt(width.getText()));
+        if (filetypeSelect.getSelectionModel().isEmpty() || outputPath.getText().isEmpty()) {
+            trayMessage("Some parameters haven't been filled!");
+        } else {
+            imageHandler.convert(outputPath.getText(), filetypeSelect.getValue(), Integer.parseInt(height.getText()), Integer.parseInt(width.getText()));
+        }
     }
 
     /**
@@ -171,6 +175,7 @@ public class mainController {
     public void readParam() throws IOException {
         height.setText(imageHandler.readHeight(urls));
         width.setText(imageHandler.readWidth(urls));
+        convertButton.setDisable(false);
         pasteButton.setLayoutX(306);
         pasteButton.setLayoutY(252);
         float initialRatio = Float.parseFloat(height.getText()) / Float.parseFloat(width.getText());
