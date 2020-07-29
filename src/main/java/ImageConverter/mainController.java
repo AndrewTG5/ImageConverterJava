@@ -13,7 +13,6 @@ import javafx.scene.input.DragEvent;
 import javafx.scene.input.TransferMode;
 import javafx.stage.FileChooser;
 import org.apache.commons.io.FilenameUtils;
-
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.datatransfer.DataFlavor;
@@ -40,10 +39,10 @@ public class mainController {
     public Label loadedFile;
     public TextField width;
     public TextField height;
-
     public String urls;
     public String pickedOutput;
     public Button pasteButton;
+    public Label ratioLabel;
 
     public void initialize() {
         // Gets supported ImageIO output filetypes and adds them to the output type dropdown. Cleans duplicates.
@@ -60,13 +59,13 @@ public class mainController {
         pasteButton.setDisable(!Toolkit.getDefaultToolkit().getSystemClipboard().isDataFlavorAvailable(imageFlavor));
         // Adds clipboard listener
         Toolkit.getDefaultToolkit().getSystemClipboard().addFlavorListener(e -> {
-            // Simplified if else statement to disable or enable pasteButton depending if the data in the clipboard is an image
+            // Sleep otherwise java.lang.IllegalStateException: cannot open system clipboard
             try {
                 Thread.sleep(100);
             } catch (InterruptedException interruptedException) {
                 interruptedException.printStackTrace();
             }
-            // Sleep otherwise java.lang.IllegalStateException: cannot open system clipboard
+            // Simplified if else statement to disable or enable pasteButton depending if the data in the clipboard is an image
             pasteButton.setDisable(!Toolkit.getDefaultToolkit().getSystemClipboard().isDataFlavorAvailable(imageFlavor));
         });
     }
@@ -80,11 +79,9 @@ public class mainController {
         ImageIO.write(pImg, "png", file);
         urls = file.getAbsolutePath();
         Image img = new Image(new FileInputStream(urls));
-        imageView.setImage(img);
-        dropLabel.setVisible(false);
         readParam();
         loadedFile.setText("Pasted from clipboard");
-        outputPath.clear();
+        imageView.setImage(img);
     }
 
     /**
@@ -109,7 +106,7 @@ public class mainController {
         dropLabel.setVisible(false);
         readParam();
         loadedFile.setText(urls);
-        outputPath.clear();
+        imageView.setImage(img);
     }
 
     /**
@@ -128,20 +125,16 @@ public class mainController {
         URL url = file.toURI().toURL();
         urls = url.toString().substring(6);
         Image img = new Image(new FileInputStream(file));
-        imageView.setImage(img);
-        dropLabel.setVisible(false);
         readParam();
         loadedFile.setText(urls);
-        outputPath.clear();
+        imageView.setImage(img);
     }
 
     /**
      * Called when the convert button is clicked. Collects output parameters from UI and sends them to imageHandler.
      */
     public void convertClick() throws IOException, AWTException {
-        String output = outputPath.getText();
-        String type = filetypeSelect.getValue();
-        imageHandler.convert(output, type);
+        imageHandler.convert(outputPath.getText(), filetypeSelect.getValue(), Integer.parseInt(height.getText()), Integer.parseInt(width.getText()));
     }
 
     /**
@@ -173,11 +166,40 @@ public class mainController {
     }
 
     /**
-     * Called when an image is imported. Gets parameters from the image and sets them as defaults in the UI.
+     * Called when an image is imported. Gets parameters from the image and sets them as defaults in the UI. Filters width and height to only numbers can be entered. Calculates the aspect ratio of the image and sets it to the ratioLabel. Red means the ratio is not the same as the original image and green means it is.
      */
     public void readParam() throws IOException {
-        imageHandler.read(urls);
         height.setText(imageHandler.readHeight(urls));
         width.setText(imageHandler.readWidth(urls));
+        float initialRatio = Float.parseFloat(height.getText()) / Float.parseFloat(width.getText());
+        outputPath.clear();
+        dropLabel.setVisible(false);
+        imageHandler.read(urls);
+        height.setPromptText(height.getText());
+        width.setPromptText(width.getText());
+        height.textProperty().addListener((observable, oldValue, newValue) -> {
+            ratioLabel.setText(Float.toString(Float.parseFloat(height.getText()) / Float.parseFloat(width.getText())));
+            if (Float.parseFloat(ratioLabel.getText()) == initialRatio) {
+                ratioLabel.setStyle("-fx-text-fill: #00ff00;");
+            } else {
+                ratioLabel.setStyle("-fx-text-fill: #ff0000;");
+            }
+            if (!newValue.matches("\\d*")) {
+                height.setText(newValue.replaceAll("[^\\d]", "")); // broken
+            }
+        });
+        width.textProperty().addListener((observable, oldValue, newValue) -> {
+            ratioLabel.setText(Float.toString(Float.parseFloat(height.getText()) / Float.parseFloat(width.getText())));
+            if (Float.parseFloat(ratioLabel.getText()) == initialRatio) {
+                ratioLabel.setStyle("-fx-text-fill: #00ff00;");
+            } else {
+                ratioLabel.setStyle("-fx-text-fill: #ff0000;");
+            }
+            if (!newValue.matches("\\d*")) {
+                width.setText(newValue.replaceAll("[^\\d]", "")); // broken
+            }
+        });
     }
 }
+
+

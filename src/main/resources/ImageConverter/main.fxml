@@ -6,7 +6,7 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="650.0" prefWidth="450" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ImageConverter.mainController">
+<AnchorPane prefHeight="650.0" prefWidth="450" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ImageConverter.mainController">
    <StackPane layoutX="18.0" layoutY="14.0" onDragDropped="#handleDrop" onDragOver="#handleDragOver" onMouseClicked="#handleDropClick" prefHeight="212.0" prefWidth="414.0" style="-fx-border-style: dashed; -fx-border-color: black; -fx-border-width: 2; color: rgb(250,250,250);">
       <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="410.0" preserveRatio="true" />
       <Label fx:id="dropLabel" text="Drop image here or click for file picker" />
@@ -28,4 +28,5 @@
    <Line endX="450" layoutY="532" />
    <Button fx:id="convertButton" layoutX="18.0" layoutY="546.0" mnemonicParsing="false" onAction="#convertClick" prefHeight="90.0" prefWidth="414.0" text="Convert" />
    <Button fx:id="pasteButton" disable="true" layoutX="161.0" layoutY="137.0" mnemonicParsing="false" onAction="#handlePaste" text="Paste from clipboard" />
+   <Label fx:id="ratioLabel" layoutX="161.0" layoutY="317.0" />
 </AnchorPane>

@@ -5,6 +5,9 @@
       <artifact name="ImageConverterJava:jar" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -25,19 +28,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d72d4a9f-4349-4ea7-932b-d4f017eb1a1a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ImageConverter/imageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImageConverter/imageHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ImageConverter/mainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImageConverter/mainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ImageConverter/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ImageConverter/main.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +108,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../test" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3321839" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -126,7 +121,7 @@
       <recent name="C:\Users\ANDREW-SL3\github\ImageConverterJava" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ImageConverterJava [build]">
+  <component name="RunManager" selected="Gradle.ImageConverterJava [run]">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="14" />
       <option name="MAIN_CLASS_NAME" value="ImageConverter.Main" />
@@ -241,6 +236,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="d72d4a9f-4349-4ea7-932b-d4f017eb1a1a" name="Default Changelist" comment="" />
@@ -396,7 +392,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595472456536</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="update dependencies">
+      <created>1595473480835</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1595473480835</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -435,13 +438,14 @@
     <MESSAGE value="allow pasting images into the app from clipboard, closed #9" />
     <MESSAGE value="fixes #10" />
     <MESSAGE value="code cleanup and add javadoc" />
-    <option name="LAST_COMMIT_MESSAGE" value="code cleanup and add javadoc" />
+    <MESSAGE value="update dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="update dependencies" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="345" y="127" key="#Plugins" timestamp="1595298488580">
+    <state x="345" y="127" key="#Plugins" timestamp="1595975668225">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state x="345" y="127" key="#Plugins/0.0.1504.972@0.0.1504.972" timestamp="1595298488580" />
+    <state x="345" y="127" key="#Plugins/0.0.1504.972@0.0.1504.972" timestamp="1595975668225" />
     <state x="233" y="61" key="#Project_Structure" timestamp="1591845995894">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
@@ -458,37 +462,37 @@
       <screen x="0" y="0" width="1504" height="972" />
     </state>
     <state x="482" y="276" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1504.972@0.0.1504.972" timestamp="1592359931033" />
-    <state x="176" y="127" width="1021" height="745" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1595298260326">
+    <state x="176" y="127" width="1021" height="745" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1595975408130">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state x="176" y="127" width="1021" height="745" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1504.972@0.0.1504.972" timestamp="1595298260326" />
+    <state x="176" y="127" width="1021" height="745" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1504.972@0.0.1504.972" timestamp="1595975408130" />
     <state x="460" y="228" key="FileChooserDialogImpl" timestamp="1595389468620">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
     <state x="460" y="228" key="FileChooserDialogImpl/0.0.1504.972@0.0.1504.972" timestamp="1595389468620" />
-    <state width="1461" height="260" key="GridCell.Tab.0.bottom" timestamp="1595471306292">
+    <state width="1461" height="260" key="GridCell.Tab.0.bottom" timestamp="1595984900655">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.bottom/0.0.1504.972@0.0.1504.972" timestamp="1595471306292" />
-    <state width="1461" height="260" key="GridCell.Tab.0.center" timestamp="1595471306292">
+    <state width="1461" height="260" key="GridCell.Tab.0.bottom/0.0.1504.972@0.0.1504.972" timestamp="1595984900655" />
+    <state width="1461" height="260" key="GridCell.Tab.0.center" timestamp="1595984900655">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.center/0.0.1504.972@0.0.1504.972" timestamp="1595471306292" />
-    <state width="1461" height="260" key="GridCell.Tab.0.left" timestamp="1595471306292">
+    <state width="1461" height="260" key="GridCell.Tab.0.center/0.0.1504.972@0.0.1504.972" timestamp="1595984900655" />
+    <state width="1461" height="260" key="GridCell.Tab.0.left" timestamp="1595984900655">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.left/0.0.1504.972@0.0.1504.972" timestamp="1595471306292" />
-    <state width="1461" height="260" key="GridCell.Tab.0.right" timestamp="1595471306292">
+    <state width="1461" height="260" key="GridCell.Tab.0.left/0.0.1504.972@0.0.1504.972" timestamp="1595984900655" />
+    <state width="1461" height="260" key="GridCell.Tab.0.right" timestamp="1595984900655">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.right/0.0.1504.972@0.0.1504.972" timestamp="1595471306292" />
-    <state x="263" y="121" key="SettingsEditor" timestamp="1595458430799">
+    <state width="1461" height="260" key="GridCell.Tab.0.right/0.0.1504.972@0.0.1504.972" timestamp="1595984900655" />
+    <state x="263" y="121" key="SettingsEditor" timestamp="1595983150184">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state x="263" y="121" key="SettingsEditor/0.0.1504.972@0.0.1504.972" timestamp="1595458430799" />
-    <state x="345" y="219" key="Vcs.Push.Dialog.v2" timestamp="1595472458649">
+    <state x="263" y="121" key="SettingsEditor/0.0.1504.972@0.0.1504.972" timestamp="1595983150184" />
+    <state x="345" y="219" key="Vcs.Push.Dialog.v2" timestamp="1595473483496">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state x="345" y="219" key="Vcs.Push.Dialog.v2/0.0.1504.972@0.0.1504.972" timestamp="1595472458649" />
+    <state x="345" y="219" key="Vcs.Push.Dialog.v2/0.0.1504.972@0.0.1504.972" timestamp="1595473483496" />
   </component>
 </project>
