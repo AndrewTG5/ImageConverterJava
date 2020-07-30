@@ -136,11 +136,18 @@ public class mainController {
     /**
      * Called when the convert button is clicked. Collects output parameters from UI and sends them to imageHandler.
      */
-    public void convertClick() throws IOException, AWTException {
+    public void convertClick() throws AWTException {
         if (filetypeSelect.getSelectionModel().isEmpty() || outputPath.getText().isEmpty()) {
             trayMessage("Some parameters haven't been filled!");
         } else {
-            imageHandler.convert(outputPath.getText(), filetypeSelect.getValue(), Integer.parseInt(height.getText()), Integer.parseInt(width.getText()));
+            new Thread(() -> {
+                try {
+                    imageHandler.convert(outputPath.getText(), filetypeSelect.getValue(), Integer.parseInt(height.getText()), Integer.parseInt(width.getText()));
+                } catch (IOException | AWTException e) {
+                    e.printStackTrace();
+                }
+            }).start();
+            //imageHandler.convert(outputPath.getText(), filetypeSelect.getValue(), Integer.parseInt(height.getText()), Integer.parseInt(width.getText()));
         }
     }
 

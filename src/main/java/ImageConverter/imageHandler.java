@@ -53,11 +53,8 @@ public class imageHandler {
     public static void convert(String outputPath, String type, int height, int width) throws IOException, AWTException {
         // Get the writer
         Iterator<ImageWriter> writers = ImageIO.getImageWritersByFormatName(type);
-        if (!writers.hasNext()) {
-            throw new IllegalArgumentException("No writer for: " + type);
-        }
-
         BufferedImage sizedImage = resizeImage(image, width, height);
+        outputPath = outputPath+"."+type;
 
         ImageWriter writer = writers.next();
         try {
@@ -65,12 +62,8 @@ public class imageHandler {
                 writer.setOutput(output);
                 ImageWriteParam param = writer.getDefaultWriteParam();
 
-                // Optionally, control format specific settings of param (requires casting), or
-                // control generic write settings like sub sampling, source region, output type etc.
-
-
-                //  streamMetadata - an IIOMetadata object representing stream metadata, or null to use default values.
-                //  image - an IIOImage object containing an image, thumbnails, and metadata to be written.
+                // streamMetadata - an IIOMetadata object representing stream metadata, or null to use default values.
+                // sizedImage - an IIOImage object containing an image, thumbnails, and metadata to be written.
                 // param - an ImageWriteParam, or null to use a default ImageWriteParam.
 
                 writer.write(null, new IIOImage(sizedImage, null, null), param);
