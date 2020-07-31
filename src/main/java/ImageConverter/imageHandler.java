@@ -9,7 +9,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Iterator;
 
-import static java.awt.image.BufferedImage.TYPE_INT_ARGB;
+import static java.awt.image.BufferedImage.TYPE_INT_RGB;
 
 public class imageHandler {
     public static BufferedImage image;
@@ -82,7 +82,7 @@ public class imageHandler {
      */
     private static BufferedImage resizeImage(BufferedImage originalImage, Integer img_width, Integer img_height)
     {
-        BufferedImage resizedImage = new BufferedImage(img_width, img_height, TYPE_INT_ARGB);
+        BufferedImage resizedImage = new BufferedImage(img_width, img_height, TYPE_INT_RGB);
         Graphics2D g = resizedImage.createGraphics();
         g.drawImage(originalImage, 0, 0, img_width, img_height, null);
         g.dispose();

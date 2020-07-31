@@ -134,7 +134,7 @@ public class mainController {
     }
 
     /**
-     * Called when the convert button is clicked. Collects output parameters from UI and sends them to imageHandler.
+     * Called when the convert button is clicked. Collects output parameters from UI and sends them to imageHandler in a separate thread.
      */
     public void convertClick() throws AWTException {
         if (filetypeSelect.getSelectionModel().isEmpty() || outputPath.getText().isEmpty()) {
@@ -147,7 +147,6 @@ public class mainController {
                     e.printStackTrace();
                 }
             }).start();
-            //imageHandler.convert(outputPath.getText(), filetypeSelect.getValue(), Integer.parseInt(height.getText()), Integer.parseInt(width.getText()));
         }
     }
 
