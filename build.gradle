@@ -1,7 +1,7 @@
 plugins {
     id 'application'
     id 'org.openjfx.javafxplugin' version '0.0.9'
-    id 'org.beryx.jlink' version '2.21.1'
+    id 'org.beryx.jlink' version '2.21.2'
 }
 
 repositories {
@@ -15,7 +15,9 @@ plugins.withType(JavaPlugin).configureEach {
 }
 
 dependencies {
-    implementation 'commons-io:commons-io:2.6'
+    implementation 'commons-io:commons-io:2.7'
+    implementation 'net.java.dev.jna:jna-platform:5.6.0'
+    compile group: 'net.java.dev.jna', name: 'jna', version: '5.6.0'
 }
 
 mainClassName = "ImageConverter.Main"
@@ -37,7 +39,7 @@ jlink {
     }
     jpackage {
         installerType = "msi"
-        appVersion = "1.4.0"
+        appVersion = "1.5.0"
         imageOptions = ['--icon', 'src/main/resources/ImageConverter/favicon.ico']
         installerOptions = ['--win-dir-chooser', '--win-menu', '--win-shortcut']
     }

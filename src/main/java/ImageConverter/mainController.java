@@ -51,6 +51,7 @@ public class mainController {
         for (int i = 0; i < extList.length; i++) {
             extList[i] = extList[i].toUpperCase();
         }
+        // Filter input so only integers can be entered
         width.setTextFormatter(new TextFormatter<>(new IntegerStringConverter()));
         height.setTextFormatter(new TextFormatter<>(new IntegerStringConverter()));
         LinkedHashSet<String> filteredList = new LinkedHashSet<>(Arrays.asList(extList));
@@ -140,6 +141,7 @@ public class mainController {
         if (filetypeSelect.getSelectionModel().isEmpty() || outputPath.getText().isEmpty()) {
             trayMessage("Some parameters haven't been filled!");
         } else {
+            // Run code in a new thread
             new Thread(() -> {
                 try {
                     imageHandler.convert(outputPath.getText(), filetypeSelect.getValue(), Integer.parseInt(height.getText()), Integer.parseInt(width.getText()));

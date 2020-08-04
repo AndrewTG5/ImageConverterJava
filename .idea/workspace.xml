@@ -28,12 +28,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d72d4a9f-4349-4ea7-932b-d4f017eb1a1a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ImageConverter/dark.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ImageConverter/imageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImageConverter/imageHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ImageConverter/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImageConverter/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ImageConverter/mainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ImageConverter/mainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +126,7 @@
       <recent name="C:\Users\ANDREW-SL3\github\ImageConverterJava" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ImageConverterJava [jpackage]">
+  <component name="RunManager" selected="Gradle.ImageConverterJava [run]">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="14" />
       <option name="MAIN_CLASS_NAME" value="ImageConverter.Main" />
@@ -230,10 +234,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.ImageConverterJava [run]" />
+        <item itemvalue="Gradle.ImageConverterJava [jpackage]" />
         <item itemvalue="Gradle.ImageConverterJava [jlink]" />
         <item itemvalue="Gradle.ImageConverterJava [clean]" />
         <item itemvalue="Gradle.ImageConverterJava [build]" />
-        <item itemvalue="Gradle.ImageConverterJava [jpackage]" />
       </list>
     </recent_temporary>
   </component>
@@ -442,7 +446,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596074376771</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="cleanup and fix jpg rgba bug">
+      <created>1596158917463</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1596158917463</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -459,7 +470,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="improve build script and desktop and start menu shortcut is now created" />
     <MESSAGE value="added file picker for import, closes #2" />
     <MESSAGE value="added system tray notification when image is converted. made drop label invisible when image is imported." />
     <MESSAGE value="added system tray notification when image is converted. made drop label invisible when image is imported. closes #3" />
@@ -484,13 +494,14 @@
     <MESSAGE value="add warning if not all parameters have been filled, other UI changes. fixes #12" />
     <MESSAGE value="height and width input will revert to the previous value on defocus if non integers are entered" />
     <MESSAGE value="add threading and fix file output bug. also update readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="add threading and fix file output bug. also update readme" />
+    <MESSAGE value="cleanup and fix jpg rgba bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleanup and fix jpg rgba bug" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="345" y="127" key="#Plugins" timestamp="1595975668225">
+    <state x="345" y="127" key="#Plugins" timestamp="1596574575630">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state x="345" y="127" key="#Plugins/0.0.1504.972@0.0.1504.972" timestamp="1595975668225" />
+    <state x="345" y="127" key="#Plugins/0.0.1504.972@0.0.1504.972" timestamp="1596574575630" />
     <state x="233" y="61" key="#Project_Structure" timestamp="1591845995894">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
@@ -515,29 +526,29 @@
       <screen x="0" y="0" width="1504" height="972" />
     </state>
     <state x="460" y="228" key="FileChooserDialogImpl/0.0.1504.972@0.0.1504.972" timestamp="1595389468620" />
-    <state width="1461" height="260" key="GridCell.Tab.0.bottom" timestamp="1596145260496">
+    <state width="1461" height="260" key="GridCell.Tab.0.bottom" timestamp="1596582138727">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.bottom/0.0.1504.972@0.0.1504.972" timestamp="1596145260496" />
-    <state width="1461" height="260" key="GridCell.Tab.0.center" timestamp="1596145260495">
+    <state width="1461" height="260" key="GridCell.Tab.0.bottom/0.0.1504.972@0.0.1504.972" timestamp="1596582138727" />
+    <state width="1461" height="260" key="GridCell.Tab.0.center" timestamp="1596582138726">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.center/0.0.1504.972@0.0.1504.972" timestamp="1596145260495" />
-    <state width="1461" height="260" key="GridCell.Tab.0.left" timestamp="1596145260495">
+    <state width="1461" height="260" key="GridCell.Tab.0.center/0.0.1504.972@0.0.1504.972" timestamp="1596582138726" />
+    <state width="1461" height="260" key="GridCell.Tab.0.left" timestamp="1596582138725">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.left/0.0.1504.972@0.0.1504.972" timestamp="1596145260495" />
-    <state width="1461" height="260" key="GridCell.Tab.0.right" timestamp="1596145260496">
+    <state width="1461" height="260" key="GridCell.Tab.0.left/0.0.1504.972@0.0.1504.972" timestamp="1596582138725" />
+    <state width="1461" height="260" key="GridCell.Tab.0.right" timestamp="1596582138726">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state width="1461" height="260" key="GridCell.Tab.0.right/0.0.1504.972@0.0.1504.972" timestamp="1596145260496" />
-    <state x="263" y="121" key="SettingsEditor" timestamp="1595983150184">
+    <state width="1461" height="260" key="GridCell.Tab.0.right/0.0.1504.972@0.0.1504.972" timestamp="1596582138726" />
+    <state x="263" y="121" key="SettingsEditor" timestamp="1596577682487">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state x="263" y="121" key="SettingsEditor/0.0.1504.972@0.0.1504.972" timestamp="1595983150184" />
-    <state x="345" y="219" key="Vcs.Push.Dialog.v2" timestamp="1596074379701">
+    <state x="263" y="121" key="SettingsEditor/0.0.1504.972@0.0.1504.972" timestamp="1596577682487" />
+    <state x="345" y="219" key="Vcs.Push.Dialog.v2" timestamp="1596158919631">
       <screen x="0" y="0" width="1504" height="972" />
     </state>
-    <state x="345" y="219" key="Vcs.Push.Dialog.v2/0.0.1504.972@0.0.1504.972" timestamp="1596074379701" />
+    <state x="345" y="219" key="Vcs.Push.Dialog.v2/0.0.1504.972@0.0.1504.972" timestamp="1596158919631" />
   </component>
 </project>
